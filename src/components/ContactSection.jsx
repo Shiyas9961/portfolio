@@ -75,10 +75,12 @@ export const ContactSection = () => {
               <div className="space-y-4">
                 <h4 className="text-lg font-semibold text-text-primary">Quick Actions</h4>
                 <div className="flex flex-col sm:flex-row gap-4">
+                  <a href="/Shiyas_B.pdf" download="Shiyas_B.pdf">
                   <Button className="bg-gradient-primary hover:opacity-90 transition-all duration-300 shadow-glow flex-1">
                     <FileText className="mr-2 h-4 w-4" />
                     Download Resume
                   </Button>
+                  </a>
                   <Button variant="outline" className="border-primary/30 hover:border-primary flex-1">
                     <Calendar className="mr-2 h-4 w-4" />
                     Schedule Call

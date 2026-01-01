@@ -38,12 +38,17 @@ export const PortfolioHero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <Button variant="default" size="lg" className="bg-gradient-primary hover:opacity-90 transition-all duration-300 shadow-glow">
-              <Download className="mr-2 h-4 w-4" />
-              Download Resume
-            </Button>
-            
-            <Button variant="outline" size="lg" className="border-primary/30 hover:border-primary transition-all duration-300">
+            <a href="/Shiyas_B.pdf" download="Shiyas_B.pdf">
+              <Button
+                variant="default"
+                size="lg"
+                className="bg-gradient-primary hover:opacity-90 transition-all duration-300 shadow-glow"
+              >
+                <Download className="mr-2 h-4 w-4" />
+                Download Resume
+              </Button>
+            </a>
+            <Button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} variant="outline" size="lg" className="border-primary/30 hover:border-primary transition-all duration-300">
               <Mail className="mr-2 h-4 w-4" />
               Contact Me
             </Button>
@@ -51,15 +56,21 @@ export const PortfolioHero = () => {
 
           {/* Social Links */}
           <div className="flex justify-center gap-6 mb-12 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            <Button variant="ghost" size="icon" className="w-12 h-12 rounded-full border border-border hover:border-primary transition-all duration-300">
+            <Button onClick={() => window.open("https://github.com/shiyas9961", "_blank")} variant="ghost" size="icon" className="w-12 h-12 rounded-full border border-border hover:border-primary transition-all duration-300">
               <Github className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="w-12 h-12 rounded-full border border-border hover:border-primary transition-all duration-300">
+            <Button onClick={() => window.open("https://www.linkedin.com/in/shiyas-a-4b2b4b234/", "_blank")} variant="ghost" size="icon" className="w-12 h-12 rounded-full border border-border hover:border-primary transition-all duration-300">
               <Linkedin className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="w-12 h-12 rounded-full border border-border hover:border-primary transition-all duration-300">
-              <Mail className="h-5 w-5" />
-            </Button>
+            <a href="mailto:shiyasshiyyu9961@gmail.com">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="w-12 h-12 rounded-full border border-border hover:border-primary transition-all duration-300"
+              >
+                <Mail className="h-5 w-5" />
+              </Button>
+            </a>
           </div>
 
           {/* Scroll Indicator */}

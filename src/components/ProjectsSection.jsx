@@ -121,10 +121,18 @@ export const ProjectsSection = () => {
                   Let's discuss how I can contribute to your DevOps team.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button className="bg-gradient-primary hover:opacity-90 transition-all duration-300 shadow-glow">
+                  <Button
+                    onClick={() => window.open("https://github.com/shiyas9961", "_blank")}
+                    className="bg-gradient-primary hover:opacity-90 transition-all duration-300 shadow-glow"
+                  >
                     View All Projects
                   </Button>
-                  <Button variant="outline" className="border-primary/30 hover:border-primary">
+
+                  <Button
+                    onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                    variant="outline"
+                    className="border-primary/30 hover:border-primary"
+                  >
                     Contact Me
                   </Button>
                 </div>

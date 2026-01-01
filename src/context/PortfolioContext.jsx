@@ -142,60 +142,68 @@ const portfolioData = {
 
   projects: [
     {
-      title: "Microservices Monitoring System", 
-      description: "Built a comprehensive monitoring solution using Prometheus and Grafana to track system metrics, application performance, and infrastructure health across multiple microservices.",
-      technologies: ["Prometheus", "Grafana", "Docker", "Linux", "AWS CloudWatch"],
-      icon: Monitor,
-      category: "DevOps & Monitoring",
-      highlights: [
-        "Reduced incident response time by 60%",
-        "Implemented custom dashboards for 5+ services",
-        "Set up automated alerting system"
-      ],
-      githubUrl: "https://github.com/your-username/monitoring-system",
-      liveUrl: "https://your-monitoring-demo.com"
-    },
-    {
-      title: "RabbitMQ Message Queue Integration",
-      description: "Designed and implemented asynchronous communication between microservices using RabbitMQ, improving system scalability and reliability.",
-      technologies: ["RabbitMQ", "Django", "FastAPI", "Docker", "Python"],
-      icon: MessageSquare,
-      category: "Backend Development", 
-      highlights: [
-        "Handled 10k+ messages per minute",
-        "Implemented retry mechanisms", 
-        "Achieved 99.9% message delivery rate"
-      ],
-      githubUrl: "https://github.com/your-username/rabbitmq-integration",
-      liveUrl: "https://your-rabbitmq-demo.com"
-    },
-    {
-      title: "Cloud Infrastructure Automation",
-      description: "Automated deployment and management of applications on AWS EC2 instances with S3 integration for file storage and backup solutions.",
-      technologies: ["AWS EC2", "AWS S3", "Linux", "Bash Scripting", "CloudWatch"],
-      icon: Cloud,
-      category: "Cloud & Infrastructure",
-      highlights: [
-        "Automated deployment pipeline",
-        "Reduced manual deployment time by 80%",
-        "Implemented automated backups"
-      ],
-      githubUrl: "https://github.com/your-username/infrastructure-automation",
-      liveUrl: "https://your-infrastructure-demo.com"
-    },
-    {
-      title: "REST API Development Suite",
-      description: "Developed multiple high-performance REST APIs using Django REST Framework and FastAPI, serving thousands of requests with optimal response times.",
-      technologies: ["Django REST Framework", "FastAPI", "PostgreSQL", "Redis", "Docker"],
+      title: "Access Management System — Backend Core Service",
+      description:
+        "Production backend for managing users, organizations, access passes, reports, and real-time device sync.",
+      technologies: ["Python", "DRF", "Celery", "Redis", "AWS S3", "CloudWatch", "PostgreSQL", "JWT"],
       icon: Server,
-      category: "Backend Development",
+      category: "Backend + Cloud + Monitoring",
       highlights: [
-        "Built 15+ API endpoints",
-        "Achieved <200ms response times",
-        "Implemented caching strategies"
+        "Implemented JWT auth + role-based permissions",
+        "Used Redis quota caching to reduce DB queries",
+        "Integrated S3 media storage + CloudWatch error alerts",
+        "Enabled CSV bulk onboarding + real-time device sync"
       ],
-      githubUrl: "https://github.com/your-username/api-suite",
-      liveUrl: "https://your-api-demo.com"
+      githubUrl: "github.com/shiyas9961",
+      liveUrl: null
+    },
+    {
+      title: "Full-Stack Microservices Platform — Django + gRPC + Flask",
+      description:
+        "Dockerized microservices platform using gRPC for service communication and Flask for REST exposure.",
+      technologies: ["Python", "DRF", "gRPC", "Flask", "Docker", "Pytest", "Swagger", "GitHub Actions"],
+      icon: Code2,
+      category: "Microservices + CI/CD",
+      highlights: [
+        "Built Flask APIs consuming gRPC services",
+        "Added Swagger documentation",
+        "Containerized all services",
+        "CI pipeline using GitHub Actions + Pytest"
+      ],
+      githubUrl: "https://github.com/Shiyas9961/grpc-django-flask-microservices",
+      liveUrl: null
+    },
+    {
+      title: "Message-Driven Microservices — FastAPI + RabbitMQ",
+      description:
+        "Async producer–consumer microservices using RabbitMQ with structured config and logs.",
+      technologies: ["FastAPI", "RabbitMQ", "Docker", "Pydantic", "Pytest", "GitHub Actions"],
+      icon: Network,
+      category: "Messaging + Containers",
+      highlights: [
+        "Built reliable message publishing/consuming",
+        "Centralized config using Pydantic",
+        "Local environment via Docker Compose",
+        "CI workflow using GitHub Actions + RabbitMQ service"
+      ],
+      githubUrl: "https://github.com/Shiyas9961/rabbitmq-fastapi-microservices",
+      liveUrl: null
+    },
+    {
+      title: "Local Cloud Backend Platform — Django + DevOps",
+      description:
+        "Simulated AWS backend locally using LocalStack with async processing and DevOps automation.",
+      technologies: ["DRF", "Celery", "Docker", "LocalStack", "PostgreSQL", "Redis", "RabbitMQ", "Pytest"],
+      icon: Cloud,
+      category: "DevOps Simulation + Infra",
+      highlights: [
+        "LocalStack AWS simulation (S3, SES, CloudWatch)",
+        "Async tasks via Celery + RabbitMQ broker",
+        "Redis caching + result backend",
+        "Dockerized full stack + automated tests"
+      ],
+      githubUrl: "https://github.com/Shiyas9961/local-cloud-django-backend",
+      liveUrl: null
     }
   ],
 
@@ -203,29 +211,29 @@ const portfolioData = {
     {
       icon: Mail,
       label: "Email",
-      value: "shiyas@example.com", 
-      href: "mailto:shiyas@example.com",
+      value: "shiyasshiyyu9961@gmail.com", 
+      href: "mailto:shiyasshiyyu9961@gmail.com",
       color: "text-primary"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "/in/mohamed-shiyas-b",
-      href: "https://linkedin.com/in/mohamed-shiyas-b",
+      value: "Shiyas B",
+      href: "https://www.linkedin.com/in/shiyas-b-490595287/",
       color: "text-accent"
     },
     {
       icon: Github,
       label: "GitHub", 
-      value: "@mohamed-shiyas",
-      href: "https://github.com/mohamed-shiyas",
+      value: "@Shiyas9961",
+      href: "https://github.com/shiyas9961",
       color: "text-text-primary"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 98765 43210",
-      href: "tel:+919876543210",
+      value: "+91 85472 37188",
+      href: "tel:+918547237188",
       color: "text-primary"
     }
   ]
